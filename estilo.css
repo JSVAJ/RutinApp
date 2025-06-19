@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(107, 229, 245);
+}
+h1{
+    color:rgb(164, 211, 255);
+    font-family: 'Helvetica';
+    text-align: center;
+}
+.menu-boton{
+    background-color: rgb(143, 242, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s
+}
+.movimientoimagen{
+    animation: aparecer 3.5s ease-out forwards
+}
+.menu-boton:hover{
+    background-color: bisque;
+    transition: background-color 0.5s, transform 0.3s;
+}
+header{
+    border-radius: 20%;
+    background-color: rgb(34, 164, 240);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(31, 2, 163);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    z-index: 1000;
+    font-family: 'Helvetica', 'Helvetica';
+}
+main{
+    text-align:center;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0); 
+    }
+}
+
+
